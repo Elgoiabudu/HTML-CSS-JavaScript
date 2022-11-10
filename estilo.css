@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;    
+}
+
+#caixa{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    height: 40px;
+    text-align: center;          
+    font-size: large;        
+}
+
+#caixa:hover{
+    background-color:antiquewhite;    
+}
+
+#botao{
+    background-color: rgb(37, 37, 39);
+    color: #FFF;
+    padding: 20px;
+}
+
+#botao:hover{
+    background-color: rgb(24, 139, 233);
+    
+}
+
+#botao:focus{
+    background-color: rgb(24, 139, 233);
+}
+
+/*#nome{    
+    display: block;
+    width: 10%;
+    float:none;
+    height: 100%;
+    width: 100%;
+    object-fit:none;
+}*/
+
+legend{
+    background-color: #FFF;
+}
+
+
+#nome{
+    width: 40%;
+    background-image: url(bcg.jpg);
+}

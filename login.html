@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>AREA DE SEGURANCA</title>
+        <!---->
+        <style type="text/css">
+
+            @import url("estilo.css");
+
+        </style>
+            <script language="JavaScript">
+                
+                function login() {
+
+                    var usuario=document.frm_login.txt_usuario.value; // indentificando onde será lido o valor e onde será armazenado.
+                    var email=document.frm_login.txt_usuario.value;
+                    var senha=document.frm_login.txt_senha.value;
+
+                    if((usuario=="fatec" || email=="fatec@fatec") && senha=="123a") {   //Comparando se os parametros são verdadeiros/existentes
+                        alert("Conta Logada com Sucesso!");
+                        window.location="pag_inicial.html";
+                    }
+                    else {
+                        alert("Conta Inválida!");
+                        limpar();
+                    }
+                    
+                }                
+                function limpar() {
+
+                        document.frm_login.txt_usuario.value="";
+                        document.frm_login.txt_senha.value="";
+                        document.frm_login.txt_usuario.focus();
+                }               
+            
+            </script>
+    
+    </head>
+    
+    <body>
+
+        
+        
+        <form name="frm_login">        
+            <fieldset id="nome">
+
+                <legend>&nbsp;&nbsp;ÁREA DE LOGIN&nbsp;&nbsp;</legend>
+                    
+                    <br><br>    
+                    
+                    <center>
+                    
+                    USUARIO OU E-MAIL:<br><br>
+                    <input id="caixa" type="text" value="" name="txt_usuario" size="40" maxlength="40" required placeholder="email@dominio.com"><br><br>
+                    SENHA<br><br>                    
+                    <input id="caixa" type="password" value="" name="txt_senha" size="40" maxlength="15" required placeholder="********"><br>
+                    <br>
+                    <input id="botao" type="button" name="btn_login" value="ENTRAR" onClick="login()">&nbsp;&nbsp;&nbsp;&nbsp; <!-- Butão" -->
+                    <input id="botao" type="button" name="btn_limpar" value="LIMPAR" onClick="limpar()">
+                    <br>
+                    
+                    </center>
+
+                    <br><br>
+                
+               </fieldset>
+        
+        </b></form>
+       
+        <script>
+
+            limpar();
+
+        </script>
+
+    </body>
+
+</html>
